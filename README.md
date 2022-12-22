@@ -31,9 +31,9 @@ ________________________________________________________________________________
 
 ## Election Audit Summary
 
-The script provided in this project can be used to audit other elections. The script is based on a CSV file that contains three columns, Ballot ID, County, and Candidate. The script will read the CSV file, process the data then calculate various metrics that include the total number of votes cast, the percentage and number of votes won by each candidate, the total number of votes cast in each county, and the percentage of county votes from the total.
+The script provided in this project can be used for other elections. The script is based on a CSV file that contains three columns, Ballot ID, County, and Candidate. The script will read a CSV file, process the data and show metrics which include the total number of votes, the percentage and number of votes each candidate received, the total number of votes for each county, and the percentage of county votes from the total.
 
-The script is flexible and could be used and modified for any election. The input file would need to be changed to reflect the ballots of the specific election. This would include the ballot ID, county, and candidates.
+The script is flexible and could be used for any election. The input file would need to be changed to reflect the ballots of the specific election. This would include the ballot ID, county, and candidates.
 
 The script could also be modified for use in local or state elections. For example, for a local election, the county column could be changed to include the city's districts. For state elections, the county column could be changed to include the state's counties.
 
@@ -51,24 +51,24 @@ The input data for this script is a CSV file containing the results of an electi
 ![FileStructure](https://user-images.githubusercontent.com/114355199/208540220-c43c6ea5-ce14-4168-803e-c47c33e58c25.png)
 
 
-The first row of the file should contain the column headers. The script expects the CSV file to be in the "Resources" directory, and the file should be named "election_results.csv".
+The first row of the file should contain the column headers. The script needs the CSV file to be in the "Resources" folder, and the file must be named "election_results.csv".
 
 
 ### Output Data
 
-The script creates a text file displaying the results of the election analysis. The file is saved in the "analysis" directory, and is named "election_results.txt". The file shows the following information:
+The script creates a text file that shows the election analysis. The file is saved in the "analysis" folder,"election_results.txt". The file shows the following details:
 
 - The total number of votes
-- The percentage of votes won by each candidate, along with the total number of votes the candidate received
-- The percentage of votes won by each county, along with the total number of votes each county received
-- The winner of the election
+- The percentage of votes for each candidate, along with the total number of votes the candidate received
+- The percentage of votes for each county, along with the total number of votes each county received
+- The candidate who won the election
 
 ### Modifying the Script for Other Elections
 
-To use this script for a different election, the following modifications should be made:
+To use this script for different elections, the following changes can be made:
 
 1. Change the input data file to match the election's results.
-2. Modify the list of candidate options to include the names of all the candidates running in the election.
-3. Modify the list of county options to include the names of all the counties or other relevant geographic divisions involved in the election.
-4. Change references to "county" in the code to reflect the geographic divisions for the election.
-5. Modify the script as needed to calculate the appropriate metric for determining the winner of the election (e.g. total votes, electoral votes, etc.).
+2. Modify the candidate column.
+3. Modify the county column to include the counties or other relevant geographic location.
+4. Change references to "county" in the script to show the geographic locations you are using.
+5. Change the script as needed to calculate the appropriate metric to determine the winner of the election example, total votes, state votes, etc.
